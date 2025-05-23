@@ -1,0 +1,29 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#gradient)" />
+  
+  <g transform="translate(300, 150) scale(2)">
+    <!-- Mouse cursor -->
+    <path d="M80 70L100 130L110 110L130 120L80 70Z" fill="white" />
+    
+    <!-- Click ripples -->
+    <circle cx="130" cy="120" r="15" stroke="white" stroke-width="3" fill="none" opacity="0.6">
+      <animate attributeName="r" from="5" to="25" dur="1.5s" begin="0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.6" to="0" dur="1.5s" begin="0s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Analytics bars -->
+    <rect x="140" y="90" width="10" height="40" rx="2" fill="white" opacity="0.8" />
+    <rect x="155" y="70" width="10" height="60" rx="2" fill="white" opacity="0.8" />
+    <rect x="170" y="100" width="10" height="30" rx="2" fill="white" opacity="0.8" />
+  </g>
+  
+  <!-- Text -->
+  <text x="600" y="500" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">Click Tracker API</text>
+  <text x="600" y="570" font-family="Arial, sans-serif" font-size="36" fill="white" text-anchor="middle">Analytics tracking for portfolio websites</text>
+</svg>

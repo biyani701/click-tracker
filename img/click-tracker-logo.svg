@@ -1,0 +1,28 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="100" cy="100" r="90" fill="url(#gradient)" />
+    
+    <!-- Mouse cursor -->
+    <path d="M80 70L100 130L110 110L130 120L80 70Z" fill="white" />
+    
+    <!-- Click ripples -->
+    <circle cx="130" cy="120" r="15" stroke="white" stroke-width="3" fill="none" opacity="0.6">
+      <animate attributeName="r" from="5" to="25" dur="1.5s" begin="0s" repeatCount="indefinite" />
+      <animate attributeName="opacity" from="0.6" to="0" dur="1.5s" begin="0s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Analytics bars -->
+    <rect x="140" y="90" width="10" height="40" rx="2" fill="white" opacity="0.8" />
+    <rect x="155" y="70" width="10" height="60" rx="2" fill="white" opacity="0.8" />
+    <rect x="170" y="100" width="10" height="30" rx="2" fill="white" opacity="0.8" />
+    
+    <!-- Text -->
+    <text x="100" y="170" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">CLICK TRACKER</text>
+  </g>
+</svg>
